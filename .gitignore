@@ -1,6 +1,7 @@
 /target
 /classes
 /checkouts
+.cpcache
 vendor
 etc/scio.ini.local
 documents
