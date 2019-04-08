@@ -1,0 +1,28 @@
+{:aliases
+ {:test
+  {:extra-paths ["test"],
+   :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}},
+  :runner
+  {:extra-deps
+   {com.cognitect/test-runner
+    {:git/url "https://github.com/cognitect-labs/test-runner",
+     :sha "76568540e7f40268ad2b646110f237a60295fa3c"}},
+   :main-opts ["-m" "cognitect.test-runner" "-d" "test"]},
+  :run {:main-opts ["-m" "scio-back.core"]}},
+ :deps
+ {org.clojure/data.json {:mvn/version "0.2.6"},
+  org.clojure/clojure {:mvn/version "1.10.0"},
+  org.apache.commons/commons-compress {:mvn/version "1.18"},
+  beanstalk-clj {:mvn/version "0.1.3"},
+  org.clojure/tools.logging {:mvn/version "0.4.1"},
+  org.clojure/tools.cli {:mvn/version "0.4.2"},
+  org.clojure/algo.generic {:mvn/version "0.1.3"},
+  digest {:mvn/version "1.4.8"},
+  clj-http {:mvn/version "3.9.1"},
+  me.raynes/fs {:mvn/version "1.4.6"},
+  clojure-opennlp {:mvn/version "0.5.0"},
+  ch.qos.logback/logback-classic {:mvn/version "1.2.3"},
+  info.debatty/java-spamsum {:mvn/version "0.2"},
+  clojure-ini {:mvn/version "0.0.2"},
+  com.novemberain/pantomime {:mvn/version "2.10.0"},
+  org.clojure/core.async {:mvn/version "0.4.490"}}}
